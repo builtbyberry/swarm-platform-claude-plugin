@@ -33,6 +33,6 @@ Swarm is a shared context bus. RITUAL: at the START of a task, call get_context_
 
 The full tool catalog is in `reference/tools.md`. Capture-mode behavior is in `reference/capture-modes.md`. Curation, handoffs, and running a dispatch as a worker are in `reference/curation.md`, `reference/handoff.md`, and `reference/dispatch.md`.
 
-Connect a tool to Swarm at `https://swarmcloud.test/mcp/swarm` (browser OAuth on first use; no token to copy).
+Connect a tool to Swarm at `https://swarmplatform.cloud/mcp/swarm` (browser OAuth on first use; no token to copy).
 
 Licensed under Apache-2.0. The hosted Swarm service has its own terms; "Swarm" is a trademark.
