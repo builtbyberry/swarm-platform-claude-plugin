@@ -1,0 +1,24 @@
+# Swarm — Claude Code plugin marketplace
+
+The Claude Code plugin marketplace for [Swarm](https://swarmplatform.cloud), the shared context bus. Installing the `swarm` plugin connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and adds the `/swarm:*` skills plus the `swarm-dispatch` worker subagent.
+
+## Install
+
+In Claude Code:
+
+```
+/plugin marketplace add builtbyberry/swarm-platform-claude-plugin
+/plugin install swarm@swarm-platform
+```
+
+Downloaded this as a zip instead? It is a self-contained marketplace — run `/plugin marketplace add ./` from the directory you unzipped it into, then install as above.
+
+Then restart Claude Code (or run `/reload-plugins`). On first use, Claude opens Swarm in your browser to authorize — no token to copy.
+
+## Generated — do not edit
+
+Every file here is rendered from the Swarm app's canonical connector by `swarm:publish-plugin`. Hand edits drift from canon and are pruned or flagged by the publisher's `--check` gate on the next publish; changes land only through a publisher PR.
+
+## License
+
+Apache-2.0 (see `LICENSE`) — fork and adapt the plugin freely. The hosted Swarm service it connects to is governed by its own terms; "Swarm" is a trademark and the licence grants no rights to it.
