@@ -4,14 +4,12 @@ The Claude Code plugin marketplace for [Swarm](https://swarmplatform.cloud), the
 
 ## Install
 
-In Claude Code:
+This tree is a self-contained marketplace. In Claude Code, from this directory:
 
 ```
-/plugin marketplace add builtbyberry/swarm-platform-claude-plugin
+/plugin marketplace add ./
 /plugin install swarm@swarm-platform
 ```
-
-Downloaded this as a zip instead? It is a self-contained marketplace — run `/plugin marketplace add ./` from the directory you unzipped it into, then install as above.
 
 Then restart Claude Code (or run `/reload-plugins`). On first use, Claude opens Swarm in your browser to authorize — no token to copy.
 
