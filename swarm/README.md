@@ -20,6 +20,10 @@ claude plugin install ./swarm
 
 Then restart Claude Code (or run `/reload-plugins`). On first use, Claude opens Swarm in your browser to authorize.
 
+## After install
+
+Run `/swarm:onboard` to bind this project to a channel — the plugin has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to `CLAUDE.md`) is what tells future sessions which one to use.
+
 ## Power mode (optional)
 
 The hooks above are reminders — they ask the model to load context, which it usually does. For a deterministic load that runs even if the model forgets, install the `swarm` CLI, create a hook credential under Settings → Connected tools, and let a `SessionStart` hook run it:
