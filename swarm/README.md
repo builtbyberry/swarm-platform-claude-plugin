@@ -34,6 +34,8 @@ swarm login   # paste your Swarm URL + the hook token
 swarm install-hooks --client claude
 ```
 
+The hook token lives in the same place it was created — revoke it any time under Settings → Connected tools.
+
 ## License
 
 This plugin is licensed under Apache-2.0 (see `LICENSE`) — fork and adapt the connector freely. The hosted Swarm service it connects to is governed by its own terms; "Swarm" is a trademark and the licence grants no rights to it.
