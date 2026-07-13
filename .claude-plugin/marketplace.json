@@ -7,7 +7,7 @@
         {
             "name": "swarm",
             "source": "./swarm",
-            "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and adds skills for loading, checkpointing, onboarding, curation, and handoffs, plus a swarm-dispatch worker subagent."
+            "description": "Swarm shared context bus \u2014 connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and adds skills for loading, checkpointing, onboarding, curation, handoffs, and the Projects produce-loop, plus swarm-dispatch and swarm-project worker subagents."
         }
     ]
 }

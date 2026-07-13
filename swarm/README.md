@@ -6,8 +6,9 @@ Connects this project to Swarm, the shared context bus, and teaches the ritual: 
 
 - `.mcp.json` — connects the hosted Swarm MCP server at `https://swarmplatform.cloud/mcp/swarm` (browser OAuth on first use; no token to copy).
 - `skills/swarm/` — the Swarm skill: how to use the tools well.
-- `skills/` — the `/swarm:load`, `/swarm:checkpoint`, `/swarm:onboard`, `/swarm:curate`, and `/swarm:handoff` skills.
+- `skills/` — the `/swarm:load`, `/swarm:checkpoint`, `/swarm:onboard`, `/swarm:curate`, `/swarm:handoff`, and `/swarm:project` skills.
 - `agents/swarm-dispatch` — a subagent that runs a Swarm dispatch end to end and returns a proposal for you to confirm.
+- `agents/swarm-project` — a subagent that runs a Swarm Project's produce-loop off the main thread and returns proposed review gates for a human to approve (the off-thread counterpart to the inline `/swarm:project` skill).
 - `hooks/` — reminders to load context at session start, preserve working context before compaction, and checkpoint when you finish.
 
 ## Install
