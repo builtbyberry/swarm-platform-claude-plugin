@@ -34,6 +34,8 @@ No channel is bound yet. Running **onboarding** (the `onboard-project` MCP promp
 
 **Dispatch** — an operator can hand a scoped task to a local agent (you) and get back a provisional proposal. You pick up an outbound handoff bundle with `inspect_handoff_bundle`, follow the exact steps in its `open_questions`, report progress with `report_dispatch_progress`, capture and promote your finding as provisional, then return a proposal bundle to the operator. Findings always land provisional — confirming them is the operator's call.
 
+On a Project, Swarm reviews and the agent edits: a human's channel into the work is a Change Request (`change_request_list`) — a recommendation, not an edit. You are the author: make the change with `artifact_edit` / `artifact_create`, then open a review gate over it with `gate_open` for a human to approve. Never author Artifact content on a human's behalf, and never approve your own gate — approver and author are always different parties. A request's `suggested_content` is advisory: a starting point to adapt, not a draft to commit verbatim — you remain the author of the committed version.
+
 The full tool catalog is in `reference/tools.md`. Capture-mode behavior is in `reference/capture-modes.md`. Curation, handoffs, and running a dispatch as a worker are in `reference/curation.md`, `reference/handoff.md`, and `reference/dispatch.md`.
 
 Connect a tool to Swarm at `https://swarmplatform.cloud/mcp/swarm` (browser OAuth on first use; no token to copy).

@@ -1,6 +1,6 @@
 # Swarm — Claude Code plugin marketplace
 
-The Claude Code plugin marketplace for [Swarm](https://swarmplatform.cloud), the shared context bus. Installing the `swarm` plugin connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and adds the `/swarm:*` skills plus the `swarm-dispatch` worker subagent.
+The Claude Code plugin marketplace for [Swarm](https://swarmplatform.cloud), the shared context bus. Installing the `swarm` plugin connects the hosted Swarm MCP server, teaches the load-at-start / checkpoint-at-end ritual, and adds the `/swarm:*` skills plus the `swarm-dispatch` and `swarm-project` worker subagents.
 
 ## Install
 
