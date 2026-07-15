@@ -23,7 +23,7 @@ Then restart Claude Code (or run `/reload-plugins`). On first use, Claude opens 
 
 ## After install
 
-Run `/swarm:onboard` to bind this project to a channel — the plugin has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <key> -->` line to `CLAUDE.md`) is what tells future sessions which one to use.
+Run `/swarm:onboard` to bind this project to a channel — the plugin has no channel baked in unless you downloaded a channel-pinned copy, so onboarding (or hand-adding a `<!-- swarm-channel: <workspace-slug>/<channel-key> -->` line to `CLAUDE.md`) is what tells future sessions which one to use.
 
 ## Power mode (optional)
 
