@@ -4,9 +4,9 @@ The tools available once a client is connected to Swarm, grouped by the loop.
 
 ## Load context (start of a task)
 
-- `get_context_for_injection` — load what other sessions already know: channel records and your private working context. Returns the channel's resolved `capture_mode` and the end-of-session `guidance`. **Call this first.**
+- `get_context_for_injection` — load what other conversations already know: channel records and your private working context. Returns the channel's resolved `capture_mode` and the end-of-conversation `guidance`. **Call this first.**
 - `list_channels` — list the channels you can reach. Use it to **discover** candidates, not to silently pick one; the active channel comes from an explicit binding or the user's choice.
-- `list_recent_sessions` — your own recent private context sessions.
+- `list_recent_sessions` — your own recent private captured conversations.
 
 ## Fetch on demand
 
@@ -21,12 +21,12 @@ The tools available once a client is connected to Swarm, grouped by the loop.
 
 ## Checkpoint (end of a meaningful chunk)
 
-- `share_session` — checkpoint a private session to its channel, exposing its summary and provenance to teammates (never raw content, no record created). Pass `trigger=agent_auto` only when the mode is Auto; otherwise `trigger=user_request` after the user agrees.
+- `share_session` — checkpoint a private conversation to its channel, exposing its summary and provenance to teammates (never raw content, no record created). Pass `trigger=agent_auto` only when the mode is Auto; otherwise `trigger=user_request` after the user agrees.
 
 ## Curate durable canon (explicit user intent)
 
-- `promote_context_to_record` — promote a private session into a channel-visible intelligence record.
-- `create_record` — create a channel-visible record directly, without a private session source.
+- `promote_context_to_record` — promote a private conversation into a channel-visible intelligence record.
+- `create_record` — create a channel-visible record directly, without a private conversation source.
 - `create_relationship` — link two records in the same channel with a typed, directional relationship.
 - `supersede_record` / `unsupersede_record` — mark one record as replacing another as current truth, or undo it.
 - `record_history` — the redaction-safe audit trail for a record.
