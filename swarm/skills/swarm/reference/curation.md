@@ -2,21 +2,21 @@
 
 Curation turns private working context into durable, channel-visible records. It is an explicit act — never automatic — so do it on the user's intent.
 
-**Curation** — turn working context into durable canon on explicit user intent: `promote_context_to_record` (from a captured session) or `create_record` (authored directly), `create_relationship` to link records, and `supersede_record` to mark one record as replaced by another.
+**Curation** — turn working context into durable canon on explicit user intent: `promote_context_to_record` (from a captured conversation) or `create_record` (authored directly), `create_relationship` to link records, and `supersede_record` to mark one record as replaced by another.
 
 ## What's worth recording
 
 Recognizing what to record is proactive; creating the record is not — offer good candidates and let the user decide (creation still needs explicit intent, as above). At the end of a meaningful chunk, scan for knowledge worth promoting to canon. A good candidate is:
 
-- **durable** — true beyond this session, not a transient working note;
-- **reusable** — it would help a future session or a teammate;
+- **durable** — true beyond this conversation, not a transient working note;
+- **reusable** — it would help a future conversation or a teammate;
 - **not already in the repo** — not captured by the code, git history, or project docs;
 - **not a personal preference** — it is shared canon, not how one person likes to work;
 - **a fit for a record type** — a decision, standard, fact, issue, insight, risk, or task.
 
 The fastest signals to watch for, especially right after a checkpoint:
 
-- **decision** — a choice was made *with a rationale* ("we will lead with X because Y"). The session resolved an open question.
+- **decision** — a choice was made *with a rationale* ("we will lead with X because Y"). The conversation resolved an open question.
 - **standard** — a rule future work must follow ("copy must show a human moment before product language"; "always/never …").
 - **fact** — a durable truth was established, or one that extends or contradicts an existing record.
 
@@ -24,8 +24,8 @@ Offer the candidates that clear that bar and let the user choose. Skip the offer
 
 ## Promote vs create
 
-- **`promote_context_to_record`** — when the intelligence came from a private session you captured with `capture_context`. The record links back to that session (`promoted_from_session_id`) for provenance. Findings from a dispatch session always land **provisional** (server-enforced).
-- **`create_record`** — when you are authoring a record directly, with no captured session behind it. Defaults to active.
+- **`promote_context_to_record`** — when the intelligence came from a private conversation you captured with `capture_context`. The record links back to that conversation (`promoted_from_session_id`) for provenance. Findings from a dispatch conversation always land **provisional** (server-enforced).
+- **`create_record`** — when you are authoring a record directly, with no captured conversation behind it. Defaults to active.
 
 Both take the same shape: a `type`, a `title`, the durable statement in `what`, and the reasoning plus provenance in `why`.
 

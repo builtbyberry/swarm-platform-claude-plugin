@@ -14,7 +14,7 @@ The onboarding ritual is:
 3. Distill the repository into atomic, typed intelligence records.
 4. Pick the target workspace: use the one the user named; otherwise, if they belong to more than one, ask — never guess or borrow another channel's workspace.
 5. Call the `onboard_project` tool to create the channel and seed it with those records.
-6. Bind this project to the channel so future sessions pick it up automatically: add a `<!-- swarm-channel: <key> -->` line to the project's own instructions file (CLAUDE.md, AGENTS.md, a `.cursor/rules/*.mdc` file — whichever this client uses; create one if none exists). This is a hard step, not optional.
+6. Bind this project to the channel so future conversations pick it up automatically: add a `<!-- swarm-channel: <key> -->` line to the project's own instructions file (CLAUDE.md, AGENTS.md, a `.cursor/rules/*.mdc` file — whichever this client uses; create one if none exists). This is a hard step, not optional.
 
 If you are unsure about the channel name or the workspace, ask the user before calling `onboard_project` rather than assuming and continuing.
 

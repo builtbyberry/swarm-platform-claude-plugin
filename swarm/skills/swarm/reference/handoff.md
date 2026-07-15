@@ -10,7 +10,7 @@ A handoff bundle is a curated transfer of context from one actor to another with
 
 ## 2. Inspect
 
-`inspect_handoff_bundle` returns the bundle: the two actors, the narrative, the open questions, and the linked records sorted by priority (title and spine only — never raw session content). This is how the recipient reviews what they are receiving.
+`inspect_handoff_bundle` returns the bundle: the two actors, the narrative, the open questions, and the linked records sorted by priority (title and spine only — never raw conversation content). This is how the recipient reviews what they are receiving.
 
 ## 3. Acknowledge
 
