@@ -40,5 +40,4 @@ The tools available once a client is connected to Swarm, grouped by the loop.
 ## Project setup
 
 - `onboard_project` — create a channel and seed it with typed records distilled from a project. Run once per project; the `onboard-project` prompt walks the full flow.
-- `set_channel_workspace` — assign a channel to one of your workspaces.
 - `report_dispatch_progress` — post a short live progress note to a dispatch run.
