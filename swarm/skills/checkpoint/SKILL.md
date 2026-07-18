@@ -11,6 +11,10 @@ Checkpoint the current conversation to its Swarm channel, following the `guidanc
 - **Propose** — ask the user first; if they agree, call `share_session` with `trigger=user_request`.
 - **Off** — keep it private; do not share unless the user explicitly asks.
 
+## Write it for a future reader
+
+You hold this conversation; the server never sees the transcript, so what you write IS the record. Author the `content` as a faithful, complete account of what actually happened — the decisions and their rationale, what changed, what was learned — not a one-line stub. A thin capture produces thin (or empty) record suggestions, so the value you bank is the value you write. `summary` is the injection-ready one-liner; `content` is the full account.
+
 ## Then check for canon
 
 A checkpoint preserves the *conversation*; the durable knowledge inside it should also become *records*. After sharing (and even when the mode is Off), scan what this conversation produced for record-worthy canon:
