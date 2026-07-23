@@ -1,6 +1,6 @@
 ---
-name: swarm-handoff
-description: Hand off curated context to another person or agent with a Swarm handoff bundle. Use when the user asks to hand off, transfer, or package context for a teammate or successor, or to inspect or acknowledge a handoff bundle.
+name: prymer-handoff
+description: Hand off curated context to another person or agent with a Prymer handoff bundle. Use when the user asks to hand off, transfer, or package context for a teammate or successor, or to inspect or acknowledge a handoff bundle.
 ---
 
 # Hand off context
@@ -11,4 +11,4 @@ A handoff bundle is a three-step protocol for transferring curated context withi
 2. **Inspect** — `inspect_handoff_bundle` returns the bundle for the recipient to review (narrative, open questions, records by priority — never raw content).
 3. **Acknowledge** — `acknowledge_handoff_bundle` marks it received. Only the recipient (the to-actor) may acknowledge.
 
-The full protocol is in the Swarm skill's `reference/handoff.md`.
+The full protocol is in the Prymer skill's `reference/handoff.md`.

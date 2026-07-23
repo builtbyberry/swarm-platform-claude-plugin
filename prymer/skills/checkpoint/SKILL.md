@@ -1,11 +1,11 @@
 ---
-name: swarm-checkpoint
-description: Checkpoint the current conversation back to its Swarm channel. Use ONLY when the user explicitly asks to checkpoint, share, or save their work to Swarm — never invoke automatically, because sharing is gated on the channel's capture mode and the user's intent.
+name: prymer-checkpoint
+description: Checkpoint the current conversation back to its Prymer channel. Use ONLY when the user explicitly asks to checkpoint, share, or save their work to Prymer — never invoke automatically, because sharing is gated on the channel's capture mode and the user's intent.
 ---
 
-# Checkpoint to Swarm
+# Checkpoint to Prymer
 
-Checkpoint the current conversation to its Swarm channel, following the `guidance` field returned by `get_context_for_injection`:
+Checkpoint the current conversation to its Prymer channel, following the `guidance` field returned by `get_context_for_injection`:
 
 - **Auto** — call `share_session` with `trigger=agent_auto`.
 - **Propose** — ask the user first; if they agree, call `share_session` with `trigger=user_request`.

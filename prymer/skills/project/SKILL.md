@@ -1,15 +1,15 @@
 ---
-name: swarm-project
-description: Work the produce-loop on a Swarm Project. Use when the user asks you to work on their Swarm project, address or review the change requests (recommendations) on a Swarm Project, or produce the changes a human has recommended — you author the edits to the Project's Artifacts and open a review gate for a human to approve. Scoped to a Swarm Project (channel + slug), not any local project folder.
+name: prymer-project
+description: Work the produce-loop on a Prymer Project. Use when the user asks you to work on their Prymer project, address or review the change requests (recommendations) on a Prymer Project, or produce the changes a human has recommended — you author the edits to the Project's Artifacts and open a review gate for a human to approve. Scoped to a Prymer Project (channel + slug), not any local project folder.
 ---
 
-# Swarm project worker
+# Prymer project worker
 
-A **Swarm Project** is a channel-scoped unit of persistent collaboration: mutable **Artifacts** (what exists now) plus durable **Records** (memory), with a review gate between a proposed change and committed canon. The division of labor is fixed: **the human recommends, and you produce.** A human files **change requests** (recommendations); *you* make the edits and open a review gate over each one for a human to approve. This is the rule to hold onto — **Swarm reviews, the agent edits** — so never wait for the human to hand-edit, and never commit canon yourself; your changes land as proposals a human approves on the gate.
+A **Prymer Project** is a channel-scoped unit of persistent collaboration: mutable **Artifacts** (what exists now) plus durable **Records** (memory), with a review gate between a proposed change and committed canon. The division of labor is fixed: **the human recommends, and you produce.** A human files **change requests** (recommendations); *you* make the edits and open a review gate over each one for a human to approve. This is the rule to hold onto — **Prymer reviews, the agent edits** — so never wait for the human to hand-edit, and never commit canon yourself; your changes land as proposals a human approves on the gate.
 
 ## What you need to start
 
-The Project is addressed by **channel key + project slug** — every tool below takes both. Resolve them against the active Swarm channel — confirm it with the user (`list_channels` only lists candidates; do not pick one yourself), then confirm the exact project slug with the user if you do not already have it. Do not guess a slug or infer the channel from the repo name.
+The Project is addressed by **channel key + project slug** — every tool below takes both. Resolve them against the active Prymer channel — confirm it with the user (`list_channels` only lists candidates; do not pick one yourself), then confirm the exact project slug with the user if you do not already have it. Do not guess a slug or infer the channel from the repo name.
 
 If the Project tools are unavailable or error (for example the `projects` feature is not enabled on this channel, or the slug does not resolve), say so plainly and stop — do **not** retry in a loop or fabricate the change. This surface only exists where Projects is turned on.
 
