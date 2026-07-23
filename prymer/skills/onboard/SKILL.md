@@ -1,9 +1,9 @@
 ---
-name: swarm-onboard
-description: Set up a new project on Swarm — create its channel and seed it with intelligence records. Use when connecting a repository to Swarm for the first time, or when the user asks to onboard, initialize, or set up a project on Swarm.
+name: prymer-onboard
+description: Set up a new project on Prymer — create its channel and seed it with intelligence records. Use when connecting a repository to Prymer for the first time, or when the user asks to onboard, initialize, or set up a project on Prymer.
 ---
 
-# Onboard a project to Swarm
+# Onboard a project to Prymer
 
 Onboarding creates ONE new channel and seeds it from the repository in front of you. It never reads from, adopts, or inherits the workspace of another channel.
 
@@ -14,7 +14,7 @@ The onboarding ritual is:
 3. Distill the repository into atomic, typed intelligence records.
 4. Pick the target workspace: use the one the user named; otherwise, if they belong to more than one, ask — never guess or borrow another channel's workspace.
 5. Call the `onboard_project` tool to create the channel and seed it with those records.
-6. Bind this project to the channel so future conversations pick it up automatically: add a `<!-- swarm-channel: <workspace-slug>/<channel-key> -->` line to the project's own instructions file (CLAUDE.md, AGENTS.md, a `.cursor/rules/*.mdc` file — whichever this client uses; create one if none exists). This is a hard step, not optional.
+6. Bind this project to the channel so future conversations pick it up automatically: add a `<!-- prymer-channel: <workspace-slug>/<channel-key> -->` line to the project's own instructions file (CLAUDE.md, AGENTS.md, a `.cursor/rules/*.mdc` file — whichever this client uses; create one if none exists). This is a hard step, not optional.
 
 If you are unsure about the channel name or the workspace, ask the user before calling `onboard_project` rather than assuming and continuing.
 

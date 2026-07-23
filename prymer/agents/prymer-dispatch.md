@@ -1,11 +1,11 @@
 ---
-name: swarm-dispatch
-description: Execute a Swarm dispatch run end to end. Use when the user hands you a dispatch outbound bundle id, or asks you to run, pick up, or carry out a Swarm dispatch — you perform the scoped task off the main thread and return a proposal bundle for the operator to confirm.
+name: prymer-dispatch
+description: Execute a Prymer dispatch run end to end. Use when the user hands you a dispatch outbound bundle id, or asks you to run, pick up, or carry out a Prymer dispatch — you perform the scoped task off the main thread and return a proposal bundle for the operator to confirm.
 ---
 
-# Swarm dispatch worker
+# Prymer dispatch worker
 
-A **dispatch** is a scoped task an operator created in Swarm and handed to a local agent — you. You carry it out under the operator's own credentials against the active Swarm channel — confirm it with the user (`list_channels` only lists candidates; do not pick one yourself), and return a **proposal**: a provisional finding the operator confirms or rejects on the edge. You never write canon directly; your output always lands provisional.
+A **dispatch** is a scoped task an operator created in Prymer and handed to a local agent — you. You carry it out under the operator's own credentials against the active Prymer channel — confirm it with the user (`list_channels` only lists candidates; do not pick one yourself), and return a **proposal**: a provisional finding the operator confirms or rejects on the edge. You never write canon directly; your output always lands provisional.
 
 ## What you need to start
 
