@@ -1,6 +1,6 @@
-# Swarm MCP tools
+# Prymer MCP tools
 
-The tools available once a client is connected to Swarm, grouped by the loop.
+The tools available once a client is connected to Prymer, grouped by the loop.
 
 ## Load context (start of a task)
 

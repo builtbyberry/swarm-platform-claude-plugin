@@ -1,10 +1,10 @@
-# Swarm dispatch
+# Prymer dispatch
 
 Dispatch lets an operator hand a scoped task to a local agent and get back a proposal — a provisional finding to confirm or reject. It is how work gets *done* against the channel's knowledge, not just recorded.
 
 ## The two roles
 
-- **Operator** — a person in the Swarm web UI. They pick an edge item (a record or a captured conversation), write a scope (e.g. "investigate the drift and propose a reconciliation check"), and dispatch it. Swarm creates a dispatch run and an outbound handoff bundle addressed from the operator to the dispatch system user.
+- **Operator** — a person in the Prymer web UI. They pick an edge item (a record or a captured conversation), write a scope (e.g. "investigate the drift and propose a reconciliation check"), and dispatch it. Prymer creates a dispatch run and an outbound handoff bundle addressed from the operator to the dispatch system user.
 - **Worker** — a local agent (such as Claude Code) running under the operator's own credentials. It picks up the outbound bundle, performs the task, and returns a proposal bundle. There is no server-side queue: the worker's first `inspect_handoff_bundle` call is what starts execution.
 
 ## The run lifecycle
