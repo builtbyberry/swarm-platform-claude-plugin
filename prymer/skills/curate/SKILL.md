@@ -1,6 +1,6 @@
 ---
-name: swarm-curate
-description: Turn working context into durable channel canon — promote or create records, link them, and supersede replaced ones. Use when the user asks to curate, record, promote, or save findings as Swarm records, or to relate or supersede existing records.
+name: prymer-curate
+description: Turn working context into durable channel canon — promote or create records, link them, and supersede replaced ones. Use when the user asks to curate, record, promote, or save findings as Prymer records, or to relate or supersede existing records.
 ---
 
 # Curate channel canon
